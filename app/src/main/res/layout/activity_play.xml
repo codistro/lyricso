@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="experiment.codistro.com.test.activity_play"
+    android:orientation="vertical"
+    android:background="@color/listBackground">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    <TextView
+        android:id="@+id/lyrics"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#fff"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:textAppearance="?android:textAppearanceMedium"/>
+    </ScrollView>
+
+    <SeekBar
+        android:id="@+id/seek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="prev"
+            android:background="@color/listBackground"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:onClick="prev"/>
+        <Button
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/listBackground"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="play"
+            android:onClick="play"/>
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/listBackground"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="pause"
+            android:onClick="stop"/>
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/listBackground"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:text="next"
+            android:onClick="next"/>
+    </LinearLayout>
+
+</LinearLayout>
